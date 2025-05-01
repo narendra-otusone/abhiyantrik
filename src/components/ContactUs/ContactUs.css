@@ -1,0 +1,128 @@
+.ContactUs {
+  margin-top: 6rem;
+  text-align: left;
+}
+.ContactUsLanding {
+  margin-left: auto;
+  margin-right: auto;
+}
+.contactusleft{
+  margin-left: 3rem;
+}
+.ContactUsForm {
+  border: 1px solid #bcbcbc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ContactUsLandingPart1 {
+  margin-left: 10%;
+  margin-top: 5%;
+  text-align: left;
+}
+.ContactUsLandingHeading {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0.02em;
+}
+.ContactUsLandingHeading2 {
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.02em;
+  color: #4a90e2;
+}
+.ContactUsLandingPart2 {
+  margin-top: 15%;
+  margin-left: 10%;
+  text-align: left;
+}
+.contactusbtn {
+  font-size: 23px;
+  margin-top: 2%;
+}
+.fa-globe {
+  margin-left: 3%;
+}
+.ContactUsGrey {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: grey;
+  margin-top: 8%;
+}
+.ContactUsBlack {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+.fa-arrow-up-right-from-square {
+  font-size: 20px;
+  color: grey;
+  margin-left: 6%;
+}
+.fa-copy {
+  font-size: 23px;
+  color: grey;
+  margin-left: 10%;
+}
+
+.form-check {
+  margin-left: 10px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-check-label {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.contact-us-heading {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #040404;
+}
+
+input::placeholder {
+  font-size: small;
+  color: grey;
+}
+textarea::placeholder {
+  font-size: small;
+  color: grey;
+}
+
+.btn-submit {
+  background-color: #002f4d;
+  color: white;
+  font-weight: 600;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.submitted-form {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+.get-back {
+  display: block;
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 1rem;
+  color: #4a90e2;
+}

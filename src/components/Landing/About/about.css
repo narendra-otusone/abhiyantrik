@@ -1,0 +1,72 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+
+}
+
+#main {
+    width: 1120px;
+    height: 487px;
+    margin: auto;
+    margin-top: 32px;
+}
+
+.about {
+    width: 342px;
+    height: 82px;
+    margin: auto;
+    padding-top: 42px;
+    font: 700 32px "Source Sans 3", sans-serif;
+}
+
+#carousel {
+    margin: auto;
+    margin-top: 15px;
+    width: 1068px;
+    padding: 40px 58px 0px;
+}
+
+.carouselItem {
+    display: flex;
+    width: 952px;
+}
+
+.carouselItem1 {
+    margin-top: 32px;
+}
+
+.CI1Heading {
+    font: 600 24px "Source Sans 3", sans-serif;
+}
+
+.CI1Para {
+    width: 504px;
+    height: 152px;
+    margin-top: 16px;
+    margin-right: 98px;
+    font: 400 16px "Roboto", sans-serif;
+}
+
+.CI1Button {
+    border: none;
+    margin-top: 24px;
+    border-radius: 4px;
+    padding: 8px 12px 8px 12px;
+    gap: 10px;
+    background-color: #FFA500;
+    font: 600 20px "Source Sans 3", sans-serif;
+}
+
+.carosuelItemImg {
+    height: 350px;
+    width: 350px;
+}
+
+@media (max-width:701px) {
+    .carouselItem {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

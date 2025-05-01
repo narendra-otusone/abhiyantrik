@@ -1,0 +1,43 @@
+.webd {
+}
+
+.webd-heading {
+  color: #ffa500;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.hire-us {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  border: 3px solid #4a90e2;
+  border-radius: 10rem 10rem 10rem 10rem;
+  font-size: 21px;
+  width: 9rem;
+  margin: 0;
+  padding: 0;
+  height: 3rem;
+  color: #4a90e2;
+}
+
+.webd-content {
+  color: #808080;
+  font-size: 17px;
+}
+
+.col-md-4 {
+  text-align: center;
+}
+
+.webd-icon-text {
+  font-size: 14px;
+}
+
+.col-md-4 img {
+  margin-bottom: 8px;
+}
+
+.webd-container {
+  margin-left: 3rem;
+}

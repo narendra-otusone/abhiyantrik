@@ -1,0 +1,85 @@
+.Heading{
+    margin-left: 44%;
+    margin-top: 20.216vh;
+}
+.AboutUs{
+    color: #002F4D;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.AboutUs span{
+    color: #FFA500;
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.Information{
+    margin-left: 10px; 
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.InformationLine1{
+    color: #040404;
+    margin-bottom: 0rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.InformationLine1 span{
+    color: #002F4D;
+    margin-bottom: 0rem;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.InformationLine2{
+    color: #040404;
+    font-size: 16px;
+    margin-bottom: 0rem;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.InformationLine3{
+    color: #040404;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.mainImage{
+   
+    margin-left: 25.5%;
+    margin-right: auto;  
+    padding-bottom: 3.5%; 
+    width: 50%;
+    z-index: -1;
+}
+.particles{
+    left: 20%;
+    margin-top: 8%;
+    position: absolute;
+    width: 25.18%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+   .Heading{
+        margin-left: 25%;
+   }
+}

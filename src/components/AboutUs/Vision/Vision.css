@@ -1,0 +1,63 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.vision {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.vision-heading {
+    width: 63%;
+    margin: auto;
+    margin-bottom: 5.8rem;
+
+    >div {
+        text-align: center;
+        font: 700 2rem 'Source Sans 3', sans-serif;
+        line-height: 2.5rem;
+        color: #4A90E2;
+        margin-bottom: 1rem;
+    }
+
+    >p {
+        text-align: center;
+        font: 400 1rem "Roboto", sans-serif;
+        line-height: 1.125rem;
+        color: #040404;
+    }
+}
+
+
+.vision-image {
+    height: 22rem;
+    width: 22rem;
+    position: relative;
+    text-align: center;
+
+    >div {
+        color: black;
+        font: 700 2.25rem 'Source Sans 3', sans-serif;
+        line-height: 2.8rem;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.vision-material {
+    >div {
+        font: 600 2rem 'Source Sans 3', sans-serif;
+        color: #002F4D;
+        margin-bottom: 1.25rem;
+    }
+
+    >p {
+        font: 400 1rem 'Source Sans 3', sans-serif;
+        color: #000000;
+        line-height: 1.3rem;
+    }
+}

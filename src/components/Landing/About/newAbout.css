@@ -1,0 +1,35 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.row {
+  width: 90%;
+  padding: 1rem;
+
+  >button {
+    border: 5px solid black;
+  }
+}
+
+.aboutustitle{
+ 
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 75px;
+  letter-spacing: 0.02em;
+  opacity: 0.1;
+  text-align: center;
+}
+.about_us_title {
+  text-align: center;
+  font-weight: bolder;
+  margin-top: -2.5rem;
+  margin-bottom: 2rem;
+  text-wrap: nowrap;
+}
+
+.about_us {
+  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

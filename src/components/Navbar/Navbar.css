@@ -1,0 +1,23 @@
+@media (min-width: 991.98px) {
+  .nav-link {
+    width: 8rem !important;
+  }
+}
+
+@media (max-width: 991.97px) {
+  .navigation-bar {
+    margin-bottom: 12rem;
+  }
+}
+
+.nav-link {
+  color: black !important;
+  font-size: large;
+  font-weight: 400;
+}
+
+.active {
+  font-weight: 900;
+  color: #4A90E2 !important;
+
+}

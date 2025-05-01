@@ -1,0 +1,58 @@
+.ErrorPage{
+    margin-top: 8rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.ErrorPageLanding{
+    margin-top: 15%;
+    display: flex;
+}
+.ErrorPageLanding h1{
+    margin-top: 4%;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: 0.02em;
+    color: #4A90E2;
+}
+.btn.ErrorPageHome{
+    margin-top: 6%;
+    width: 250px;
+    height: 44px;
+    border-radius: 40px;
+    border: 2px solid #002F4D;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #002F4D;
+}
+.btn.ErrorPageHome span{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #002F4D;
+}
+.Image404{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.RobotImage{
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+.ErrorPage p{
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+/* text-align: left; */
+color:#002F4D;
+}

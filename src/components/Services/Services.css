@@ -1,0 +1,83 @@
+.services {
+  height: 70vh;
+}
+
+.heading {
+  height: 5rem;
+  background-color: #002f4d;
+  margin-top: 8rem;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.service-content {
+  width: 100%;
+  min-height: 60vh;
+  max-height: 60vh;
+  border-left: 2rem solid #002f4d;
+  border-right: 2rem solid #002f4d;
+  position: relative;
+}
+
+.service-list {
+  border-left: 2rem solid #002f4d;
+  border-right: 2rem solid #002f4d;
+  display: flex;
+}
+
+.service-item {
+  width: 33.33%;
+  display: flex;
+}
+
+.one {
+  width: 50%;
+  left: 0;
+  bottom: 130px;
+  border-bottom: 30px solid #002f4d;
+  border-right: 35px solid transparent;
+}
+.two {
+  width: 50%;
+  bottom: 130px;
+  border-bottom: 30px solid #002f4d;
+  border-left: 35px solid transparent;
+}
+
+.inactive {
+  width: 100%;
+  bottom: 130px;
+  background-color: #002f4d;
+}
+
+.service-buttons {
+  border-left: 2rem solid #002f4d;
+  border-right: 2rem solid #002f4d;
+  background-color: #002f4d;
+}
+.list-items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-color: white;
+}
+
+.list-item {
+  width: 33.33%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #002f4d;
+}
+
+.inactive {
+  color: white;
+  background-color: #002f4d;
+}

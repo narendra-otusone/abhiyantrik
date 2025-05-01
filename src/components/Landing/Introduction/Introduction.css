@@ -1,0 +1,114 @@
+.Intro {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../../../../public/Images/image.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  overflow: hidden;
+}
+.rectangle1 {
+  width: 100%;
+  padding-top: 300px;
+  opacity: 0.85;
+  background: linear-gradient(
+    180deg,
+    rgba(252, 250, 252, 0.49) 48.94%,
+    rgba(74, 144, 226, 0.51) 72.08%,
+    rgba(28, 74, 104, 0) 102.69%
+  );
+}
+
+.mainIntro {
+  margin-left: 4.937458854509vw;
+  margin-bottom: 1rem;
+}
+.mainIntroText {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fcfafc;
+}
+.moreIntro {
+  margin-left: 4.937458854509vw;
+}
+.moreIntroTextLine1 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.44px;
+  color: #fcfafc;
+  margin-bottom: 0%;
+}
+
+.moreIntroTextLine2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.44px;
+  color: #fcfafc;
+  margin-bottom: 0%;
+}
+.moreIntroTextLine3 {
+  font-weight: 650;
+  font-size: 18px;
+  line-height: 23.44px;
+  color: #fcfafc;
+  margin-bottom: 0%;
+}
+.bottomPart {
+  display: flex;
+  flex-direction: row;
+}
+.getStarted {
+  margin-top: 11.09vh;
+  margin-left: 75px;
+}
+
+.btn.getStartedButton {
+  width: 147px;
+  height: 44px;
+  border-radius: 40px;
+  border-width: 1.5px;
+  gap: 10px;
+  border-color: #4a90e2;
+  color: #fcfafc;
+  font-size: 20px;
+  font-weight: 520;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.line {
+  height: 0;
+  margin-top: 13.77vh;
+  display: inline-block;
+  width: 75.707702435813vw;
+  border: 1.5px solid;
+  border-color: #4a90e2;
+}
+.fa-solid {
+  color: #fcfafc;
+  size: 2.12px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.downArrow {
+  margin-left: 50%;
+  margin-top: 2%;
+  padding: 0;
+}
+.btn.downArrowButton {
+  border: 2.12px solid #fcfafc;
+  border-radius: 50%;
+}
+@media screen and (max-width: 600px) {
+  .rectangle1 {
+    padding-top: 250px;
+  }
+  .line {
+    width: 150px;
+  }
+  .downArrow {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,14 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.ProjectFooter {
+    background-color: #002F4D;
+}
+
+.footer_text {
+    font: 600 1rem 'Source Sans 3', sans-serif;
+    color: #FCFAFC;
+    line-height: 1.25rem;
+}

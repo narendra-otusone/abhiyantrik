@@ -1,0 +1,36 @@
+.ai {
+}
+
+.ai-heading {
+  color: #ffa500;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.hire-us {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  border: 3px solid #4a90e2;
+  border-radius: 10rem 10rem 10rem 10rem;
+  font-size: 21px;
+  width: 9rem;
+  color: #4a90e2;
+}
+
+.ai-content {
+  color: #808080;
+  font-size: 17px;
+}
+
+.col-md-3 {
+  text-align: center;
+}
+
+.ai-icon-text {
+  font-size: 14px;
+}
+
+.col-md-3 img {
+  margin-bottom: 8px;
+}

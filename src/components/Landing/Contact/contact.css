@@ -1,0 +1,73 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.contact {
+  width: 80%;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  margin-right: auto;
+}
+
+.contact-heading {
+  font: 700 2.5rem 'Source Sans 3', sans-serif;
+  color: #040404;
+  margin-bottom: 0.625rem;
+  text-align: left;
+}
+
+.contact-heading-span {
+  font: 700 2.5rem 'Source Sans 3', sans-serif;
+  color: #4a90e2;
+}
+
+.contact-para {
+  font: 400 1rem 'Roboto', sans-serif;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.contact-us-button {
+  padding: 0.5rem 0.75rem;
+  background-color: #002f4d;
+  color: white;
+  font: 600 1.3rem 'Source Sans 3', sans-serif;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.contact_us_icon {
+  font-size: 1.8rem;
+  color: grey;
+}
+
+.circle {
+  width: 3.12rem;
+  height: 3.12rem;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  opacity: 0.9;
+}
+
+.email-phone {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.25rem;
+
+  > div {
+    width: 11.5rem;
+
+    > p {
+      text-align: center;
+      padding: 0.7rem;
+      font: 500 1.18rem 'Roboto', sans-serif;
+      color: #000000;
+    }
+  }
+}
