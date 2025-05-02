@@ -38,12 +38,13 @@ const Navbar = ({ isAuthenticated }) => {
         }}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            <img
+          <a className="navbar-brand" href="/" >
+            {/* <img
               src="/icon.png"
               alt="Bootstrap"
               style={{ width: '4rem', marginLeft: '3rem', marginTop: '1rem' }}
-            />
+            /> */}
+            <span style={{color:"#ffa500"}}>Vidhya Drishti</span>
           </a>
 
           <button
