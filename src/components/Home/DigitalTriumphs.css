@@ -1,0 +1,83 @@
+.digital-triumphs {
+  position: relative;
+  top: -40px; /* This moves the section upward */
+  padding: 60px 80px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+
+.section-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.triumph-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.triumph-card {
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 340px;
+  text-align: left;
+}
+
+.triumph-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.triumph-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.triumph-card-description {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.triumph-card-link {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+}
+
+.triumph-card-link .arrow {
+  margin-left: 4px;
+}
+
+.cta-button-container {
+  margin-top: 40px;
+}
+
+.cta-button {
+  background-color: #0047FF;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .triumph-cards-wrapper {
+    justify-content: center;
+  }
+}
