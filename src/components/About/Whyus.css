@@ -1,0 +1,111 @@
+.about-container {
+  padding: 80px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+}
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Left Side */
+.about-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.why-choose-us h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.why-choose-us ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.why-choose-us ul li {
+  margin-bottom: 10px;
+}
+
+.get-in-touch {
+  text-decoration: underline;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Right Side */
+.about-header .tagline {
+  color: #00aa88;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.about-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.about-header .description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-left: 4px solid #5a67d8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #ea580c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 40px 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-header,
+  .why-choose-us,
+  .card {
+    text-align: center;
+  }
+
+  .cta-button {
+    margin: 0 auto;
+  }
+}

@@ -25,7 +25,12 @@ import AI from './components/Home/AI.jsx';
 import ExpertiseSection from './components/Home/ExpertiseSection.jsx';
 import StatsSection from './components/Home/StatsSection.jsx';
 import WhyUsSection from './components/Home/WhyUsSection.jsx';
-import DigitalTriumphs from './components/Home/DigitalTriumphs.jsx';  // ✅ Correct import
+import DigitalTriumphs from './components/Home/DigitalTriumphs.jsx';
+import Heading from "./components/About/Heading.jsx";  
+import Whyus from './components/About/Whyus.jsx';
+import ExpertiseSolutions from './components/About/ExpertiseSolutions.jsx';
+import Experts from './components/About/Experts.jsx';
+import Offering from './components/OurService/Offering.jsx';
 
 function App() {
   return (
@@ -50,6 +55,11 @@ function App() {
           <Route path="/whyus" element={<WhyUsSection />} />
           <Route path="/card" element={<DigitalTriumphs />} />
           <Route path="/footer" elemment ={<Footer/>}/>
+          <Route path="/heading" element={<Heading/>}/>
+          <Route path="/why" element={<Whyus/>}/>
+          <Route path="/expert" element={<ExpertiseSolutions/>}/>
+          <Route path="/team" element={<Experts/>}/>
+          <Route path="/offering" element={<Offering/>}/>
 
           {/* Private route */}
           <Route
