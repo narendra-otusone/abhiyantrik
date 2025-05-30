@@ -1,15 +1,19 @@
 import React from 'react';
 import './Heading.css';
 import About from '../../Assets/HomePage/About.jpg';
-import Nav from '../Home/Nav';
-import Footer from '../Home/Footer';
+// import Navi from '../Home/Navi';
+import ExpertiseSolutions from './ExpertiseSolutions';
+import Experts from './Experts';
+import Footers from './Footers';
+import Menu from '../OurService/Menu';
+import PresentationSection from './PresentationSection';
 import Whyus from './Whyus';
+
 
 const Heading = () => {
   return (
     <>
-      <Nav />
-      
+      <Menu />
       <div className="about-banner">
         <img src={About} alt="About Us" className="about-background" />
         <div className="about-content">
@@ -20,9 +24,13 @@ const Heading = () => {
           </p>
         </div>
       </div>
+         <Whyus />
+      <ExpertiseSolutions/>
+      <PresentationSection/>
+      <Experts/>
 
-      <Whyus />
-      <Footer />
+      
+      <Footers />
     </>
   );
 };

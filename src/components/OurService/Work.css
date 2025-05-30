@@ -1,0 +1,142 @@
+.services-container {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 40px;
+}
+
+.services-content {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.service-menu {
+  width: 250px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+  transition: all 0.3s;
+  color: #333;
+}
+
+.menu-button.active {
+  background-color: #ff6b00;
+  color: white;
+  border-left: 4px solid #333;
+}
+
+.menu-button .arrow {
+  font-weight: bold;
+}
+
+.service-details {
+  flex: 1;
+}
+
+.service-description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.image-benefits {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.service-image {
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.benefits h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.benefits .highlight {
+  color: #00b894;
+  margin-bottom: 10px;
+}
+
+.benefits ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.benefits li {
+  margin-bottom: 6px;
+  color: #333;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  width: 250px;
+  background: #f3f3f3;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  font-size: 32px;
+  background: #1c3d8c;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.read-more {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: 500;
+}

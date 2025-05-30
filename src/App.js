@@ -20,7 +20,7 @@ import PrivateRoute from './components/Routing/PrivateRoute';
 import Footer from './components/Home/Footer.jsx';
 
 // Optional extra routes for individual sections (mostly for development or previews)
-import Nav from './components/Home/Nav.jsx';
+import Navi from './components/Home/Navi.jsx';
 import AI from './components/Home/AI.jsx';
 import ExpertiseSection from './components/Home/ExpertiseSection.jsx';
 import StatsSection from './components/Home/StatsSection.jsx';
@@ -31,6 +31,11 @@ import Whyus from './components/About/Whyus.jsx';
 import ExpertiseSolutions from './components/About/ExpertiseSolutions.jsx';
 import Experts from './components/About/Experts.jsx';
 import Offering from './components/OurService/Offering.jsx';
+import PresentationSection from './components/About/PresentationSection.jsx';
+import Footers from './components/About/Footers.jsx';
+import Menu from './components/OurService/Menu.jsx';
+import Testimonial from './components/OurService/Testimonial.jsx';
+import Work from './components/OurService/Work.jsx';
 
 function App() {
   return (
@@ -48,7 +53,7 @@ function App() {
           <Route path="/projectdetails" element={<ProjectDetails />} />
 
           {/* Optional section-specific routes */}
-          <Route path="/navii" element={<Nav />} />
+          <Route path="/navii" element={<Navi />} />
           <Route path="/homepage" element={<AI />} />
           <Route path="/expertise" element={<ExpertiseSection />} />
           <Route path="/stats" element={<StatsSection />} />
@@ -60,6 +65,11 @@ function App() {
           <Route path="/expert" element={<ExpertiseSolutions/>}/>
           <Route path="/team" element={<Experts/>}/>
           <Route path="/offering" element={<Offering/>}/>
+          <Route path="/present" element={<PresentationSection/>}/>
+          <Route path="/foot" element ={<Footers/>}/>
+          <Route path="/menu" element={<Menu/>}/>
+          <Route path="/test" element={<Testimonial/>}/>
+          <Route path="/work" element={<Work/>}/>
 
           {/* Private route */}
           <Route

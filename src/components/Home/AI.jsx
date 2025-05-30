@@ -1,17 +1,18 @@
 import React from 'react';
 import './AI.css';
 import aiImage from '../../Assets/HomePage/AI.png';
-import Nav from './Nav';
+// import Navi from './Navi';
+import Menu from '../OurService/Menu';
 import StatsSection from './StatsSection';
 import ExpertiseSection from './ExpertiseSection';
 import WhyUsSection from './WhyUsSection';
 import DigitalTriumphs from './DigitalTriumphs';
-import Footer from './Footer';
+import Footers from '../About/Footers';
 
 const AI = () => {
   return (
     <>
-    <Nav/>
+    <Menu/>
     <div className="ai-section">
       <div className="ai-content">
         <h1>Bridging Business Vision<br />with Digital Reality</h1>
@@ -30,7 +31,7 @@ const AI = () => {
     <ExpertiseSection/>
     <WhyUsSection/>
     <DigitalTriumphs/>
-    <Footer/>
+    <Footers/>
     </>
   );
 };

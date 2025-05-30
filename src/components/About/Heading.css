@@ -1,5 +1,3 @@
-
-
 .about-background {
   width: 100%;
   height: 100%;
@@ -10,12 +8,11 @@
 .about-banner {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 40vh; /* Reduced from 60vh */
   overflow: hidden;
   z-index: 1;
-  margin-bottom: 400px; /* 👈 this ensures next section starts below the banner */
+  margin-bottom: 200px; /* Adjusted for better spacing */
 }
-
 
 .about-content {
   position: absolute;
@@ -27,10 +24,9 @@
   z-index: 2;
 }
 
-
 .about-tagline {
   font-size: 16px;
-  color: #00f28f; /* Light green indicator */
+  color: #00f28f;
   margin-bottom: 10px;
 }
 
@@ -44,6 +40,7 @@
   font-size: 20px;
   line-height: 1.6;
 }
+
 @media (max-width: 768px) {
   .about-content {
     left: 5%;

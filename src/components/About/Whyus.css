@@ -1,111 +1,207 @@
+/* Whyus.css */
+.whyus-container {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
 .about-container {
-  padding: 80px;
-  background-color: #f9f9f9;
-  font-family: 'Segoe UI', sans-serif;
-  color: #222;
-}
-
-.about-content {
   display: flex;
-  gap: 40px;
   flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.left,
-.right {
+.left-column {
   flex: 1;
   min-width: 300px;
 }
 
-/* Left Side */
-.about-image {
-  width: 100%;
+.image-container {
+  background-color: #f8f8f8;
+  padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.why-choose-us h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.team-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 4px;
+  height: auto;
+  object-fit: cover;
+}
+
+.why-choose-us h2 {
+  font-size: clamp(20px, 2vw, 22px);
+  margin-bottom: 12px;
+  color: #333;
 }
 
 .why-choose-us ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
+  list-style: disc inside;
+  color: #444;
+  margin-bottom: 15px;
+  padding-left: 0;
 }
 
-.why-choose-us ul li {
+.why-choose-us li {
   margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: clamp(14px, 1.8vw, 16px);
+  word-break: break-word;
 }
 
-.get-in-touch {
+.contact-link {
+  font-weight: 600;
   text-decoration: underline;
-  color: #333;
-  font-weight: 600;
+  color: #1c3d8c;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: clamp(14px, 1.8vw, 16px);
 }
 
-/* Right Side */
-.about-header .tagline {
-  color: #00aa88;
-  font-weight: 600;
-  margin-bottom: 8px;
+.right-column {
+  flex: 1;
+  min-width: 300px;
 }
 
-.about-header h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin: 8px 0;
-}
-
-.about-header .description {
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.card {
-  background: #fff;
-  padding: 20px;
-  border-left: 4px solid #5a67d8;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  margin-bottom: 20px;
-}
-
-.card h4 {
+.welcome {
+  color: #1c3d8c;
   margin-bottom: 10px;
+  font-weight: 500;
+  font-size: clamp(16px, 2vw, 18px);
 }
 
-.cta-button {
-  background-color: #f97316;
+.right-column h2 {
+  font-size: clamp(24px, 3vw, 28px);
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.description {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: clamp(14px, 1.8vw, 16px);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-card {
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  border-left: 4px solid #1c3d8c;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.info-card h3 {
+  margin-bottom: 10px;
+  font-size: clamp(16px, 2vw, 18px);
+  color: #333;
+}
+
+.info-card p {
+  color: #555;
+  line-height: 1.5;
+  font-size: clamp(14px, 1.8vw, 16px);
+  word-break: break-word;
+}
+
+.more-about-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background: #f57c00;
   color: white;
   border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+  width: 100%;
+  max-width: 200px;
+  font-size: clamp(14px, 1.8vw, 16px);
 }
 
-.cta-button:hover {
-  background-color: #ea580c;
+.more-about-btn:hover {
+  background: #d66400;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Responsive styles */
+@media (max-width: 900px) {
   .about-container {
-    padding: 40px 20px;
+    gap: 30px;
+    padding: 30px 20px;
   }
-
-  .about-content {
-    flex-direction: column;
+  
+  .left-column, 
+  .right-column {
+    flex: 1 1 100%;
   }
-
-  .about-header,
-  .why-choose-us,
-  .card {
-    text-align: center;
+  
+  .team-image {
+    max-width: 100%;
   }
+}
 
-  .cta-button {
-    margin: 0 auto;
+@media (max-width: 768px) {
+  .whyus-container {
+    padding: 30px 0;
+  }
+  
+  .about-container {
+    padding: 25px 15px;
+    gap: 25px;
+  }
+  
+  .image-container {
+    padding: 15px;
+  }
+  
+  .info-card {
+    padding: 15px;
+  }
+  
+  .more-about-btn {
+    max-width: 100%;
+    margin: 25px auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .whyus-container {
+    padding: 20px 0;
+  }
+  
+  .about-container {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  
+  .image-container {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .why-choose-us li,
+  .info-card p {
+    line-height: 1.6;
+  }
+  
+  .more-about-btn {
+    padding: 10px 20px;
   }
 }
