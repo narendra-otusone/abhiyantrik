@@ -19,6 +19,12 @@ const Menu = () => {
 
       <nav className="navbar">
         <div className="logo">Abhiyantrik.ai</div>
+        <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+        <label htmlFor="menu-toggle" className="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>

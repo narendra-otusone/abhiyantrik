@@ -2,6 +2,8 @@
 .whyus-container {
   background-color: #f5f5f5;
   padding: 40px 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .about-container {
@@ -15,6 +17,8 @@
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .left-column {
@@ -39,7 +43,7 @@
 }
 
 .why-choose-us h2 {
-  font-size: clamp(20px, 2vw, 22px);
+  font-size: 22px;
   margin-bottom: 12px;
   color: #333;
 }
@@ -54,7 +58,7 @@
 .why-choose-us li {
   margin-bottom: 10px;
   line-height: 1.5;
-  font-size: clamp(14px, 1.8vw, 16px);
+  font-size: 16px;
   word-break: break-word;
 }
 
@@ -65,7 +69,7 @@
   cursor: pointer;
   display: inline-block;
   margin-top: 10px;
-  font-size: clamp(14px, 1.8vw, 16px);
+  font-size: 16px;
 }
 
 .right-column {
@@ -77,11 +81,11 @@
   color: #1c3d8c;
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: clamp(16px, 2vw, 18px);
+  font-size: 18px;
 }
 
 .right-column h2 {
-  font-size: clamp(24px, 3vw, 28px);
+  font-size: 28px;
   margin-bottom: 16px;
   color: #333;
 }
@@ -90,13 +94,18 @@
   color: #333;
   line-height: 1.6;
   margin-bottom: 30px;
-  font-size: clamp(14px, 1.8vw, 16px);
+  font-size: 16px;
+}
+
+.cards-container {
+  width: 100%;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .info-card {
@@ -110,14 +119,14 @@
 
 .info-card h3 {
   margin-bottom: 10px;
-  font-size: clamp(16px, 2vw, 18px);
+  font-size: 18px;
   color: #333;
 }
 
 .info-card p {
   color: #555;
   line-height: 1.5;
-  font-size: clamp(14px, 1.8vw, 16px);
+  font-size: 16px;
   word-break: break-word;
 }
 
@@ -133,7 +142,7 @@
   transition: background 0.3s;
   width: 100%;
   max-width: 200px;
-  font-size: clamp(14px, 1.8vw, 16px);
+  font-size: 16px;
 }
 
 .more-about-btn:hover {
@@ -141,34 +150,74 @@
 }
 
 /* Responsive styles */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .about-container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-container {
+    max-width: 800px;
     gap: 30px;
-    padding: 30px 20px;
-  }
-  
-  .left-column, 
-  .right-column {
-    flex: 1 1 100%;
-  }
-  
-  .team-image {
-    max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   .whyus-container {
-    padding: 30px 0;
+    padding: 30px 15px;
   }
   
   .about-container {
-    padding: 25px 15px;
+    padding: 30px 15px;
     gap: 25px;
+    flex-direction: column;
+  }
+  
+  .left-column, 
+  .right-column {
+    width: 100%;
+  }
+  
+  .team-image {
+    max-width: 100%;
+  }
+  
+  .more-about-btn {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .whyus-container {
+    padding: 20px 10px;
+  }
+  
+  .about-container {
+    padding: 20px 15px;
+    gap: 20px;
   }
   
   .image-container {
     padding: 15px;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 20px;
+  }
+  
+  .right-column h2 {
+    font-size: 24px;
+  }
+  
+  .welcome {
+    font-size: 16px;
+  }
+  
+  .description,
+  .why-choose-us li,
+  .info-card p {
+    font-size: 15px;
   }
   
   .info-card {
@@ -176,32 +225,28 @@
   }
   
   .more-about-btn {
-    max-width: 100%;
-    margin: 25px auto 0;
+    padding: 10px 20px;
+    font-size: 15px;
   }
 }
 
-@media (max-width: 480px) {
-  .whyus-container {
-    padding: 20px 0;
-  }
-  
+@media (max-width: 400px) {
   .about-container {
-    padding: 20px 10px;
-    gap: 20px;
+    padding: 15px 10px;
   }
   
-  .image-container {
-    padding: 10px;
-    margin-bottom: 15px;
+  .why-choose-us h2,
+  .right-column h2 {
+    font-size: 18px;
   }
   
+  .description,
   .why-choose-us li,
   .info-card p {
-    line-height: 1.6;
+    font-size: 14px;
   }
   
-  .more-about-btn {
-    padding: 10px 20px;
+  .info-card h3 {
+    font-size: 16px;
   }
 }
