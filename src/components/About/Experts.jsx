@@ -4,8 +4,7 @@ import './Experts.css';
 // Importing images
 import David from '../../Assets/HomePage/David.png';
 import maam from '../../Assets/HomePage/maam.png';
-
-
+import first from "../../Assets/HomePage/first.png";
 
 // Social Icons (FontAwesome)
 import { FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa";
@@ -14,7 +13,7 @@ const teamMembers = [
   {
     name: "Nattasha Kelvin",
     title: "Team member post",
-    image: David,
+    image: first,
     social: true,
   },
   {
@@ -35,7 +34,10 @@ const Experts = () => {
   return (
     <section className="experts">
       <div className="experts-header">
-        <span className="experts-subtitle">Our Team</span>
+        <span className="experts-subtitle">
+          <span className="subtitle-square"></span>
+          Our Team
+        </span>
         <h2 className="experts-title">Meet Our Experts</h2>
       </div>
       <div className="experts-team">
@@ -52,8 +54,10 @@ const Experts = () => {
               )}
             </div>
             <div className="expert-info">
-              <strong>{member.name}</strong>
-              <p>{member.title}</p>
+              <div className="info-content">
+                <strong>{member.name}</strong>
+                <p>{member.title}</p>
+              </div>
             </div>
           </div>
         ))}

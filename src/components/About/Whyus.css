@@ -24,10 +24,13 @@
 .left-column {
   flex: 1;
   min-width: 300px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .image-container {
-  background-color: #f8f8f8;
+  background-color: #f0f0f0;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -46,6 +49,7 @@
   font-size: 22px;
   margin-bottom: 12px;
   color: #333;
+  font-weight: 700;
 }
 
 .why-choose-us ul {
@@ -81,13 +85,24 @@
   color: #1c3d8c;
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-box {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #00b894;
+  margin-right: 8px;
 }
 
 .right-column h2 {
   font-size: 28px;
   margin-bottom: 16px;
   color: #333;
+  font-weight: 700;
 }
 
 .description {
@@ -110,17 +125,26 @@
 
 .info-card {
   padding: 20px;
-  background: #f8f8f8;
+  background: white;
   border-radius: 8px;
   border-left: 4px solid #1c3d8c;
   width: 100%;
   box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .info-card h3 {
   margin-bottom: 10px;
   font-size: 18px;
   color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.blue-tick {
+  color: #1c3d8c;
+  font-size: 20px;
+  margin-right: 8px;
 }
 
 .info-card p {
@@ -211,7 +235,7 @@
   }
   
   .welcome {
-    font-size: 16px;
+    font-size: 12px;
   }
   
   .description,

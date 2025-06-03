@@ -1,16 +1,38 @@
+/* Work.css */
+.services-heading-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.red-pointer {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #ff0000;
+  margin-right: 8px;
+}
+
+.about-tagline {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin: 0;
+}
+
 .services-container {
   padding: 80px 20px;
   max-width: 1200px;
   margin: auto;
   font-family: 'Inter', sans-serif;
-}
-
-.section-heading {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  color: #2d2d2d;
-  margin-bottom: 40px;
 }
 
 .services-content {
@@ -93,6 +115,7 @@
   margin-bottom: 6px;
   color: #333;
 }
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -105,38 +128,66 @@
   width: 250px;
   background: #f3f3f3;
   border-radius: 12px;
-  padding: 30px 20px;
+  padding: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
-  text-align: center;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
 }
 
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
 .icon-circle {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 20px;
-  font-size: 32px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
   background: #1c3d8c;
   color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .card-title {
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 12px;
   color: #333;
+  margin: 0;
 }
 
 .read-more {
   color: #3f51b5;
   text-decoration: none;
   font-weight: 500;
+  display: block;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .services-content {
+    flex-direction: column;
+  }
+  
+  .service-menu {
+    width: 100%;
+  }
+  
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service-card {
+    width: 100%;
+    max-width: 300px;
+  }
 }

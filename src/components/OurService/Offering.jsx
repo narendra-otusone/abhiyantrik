@@ -15,12 +15,14 @@ const Offering = () => {
       <div className="about-banner">
         <img src={About} alt="About Us" className="about-background" />
         <div className="about-content">
-          <p className="about-tagline">Our Services</p>
-          <h1 className="about-title">We're Offering</h1>
-          <p className="about-description">
-            Explore the Boundless Horizons of AI Excellence with us at
-            <strong>Abhiyantrik.ai</strong>
+          <p className="about-tagline">
+            <span className="red-pointer"></span>Our Services
           </p>
+          <h1 className="about-title">We're Offering</h1>
+          <div className="about-description">
+            <p>Explore the Boundless Horizons of AI Excellence with us at</p>
+            <strong>Abhiyantrik.ai</strong>
+          </div>
         </div>
       </div>
       <div className="content-wrapper">

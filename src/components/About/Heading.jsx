@@ -1,14 +1,12 @@
 import React from 'react';
 import './Heading.css';
 import About from '../../Assets/HomePage/About.jpg';
-// import Navi from '../Home/Navi';
 import ExpertiseSolutions from './ExpertiseSolutions';
 import Experts from './Experts';
 import Footers from './Footers';
 import Menu from '../OurService/Menu';
 import PresentationSection from './PresentationSection';
 import Whyus from './Whyus';
-
 
 const Heading = () => {
   return (
@@ -17,19 +15,20 @@ const Heading = () => {
       <div className="about-banner">
         <img src={About} alt="About Us" className="about-background" />
         <div className="about-content">
-          <p className="about-tagline">About Us</p>
-          <h1 className="about-title">Know About Us</h1>
-          <p className="about-description">
-            Empowering Businesses with <strong>Abhiyantrik.ai</strong>
+          <p className="about-tagline" style={{color:"white",paddingLeft: "20px"}}>
+            <span className="green-square" style={{color:"white"}}></span>About Us
           </p>
+          <h1 className="about-title">Know About Us</h1>
+          <div className="about-description">
+            <p>Empowering Businesses with</p>
+            <strong>Abhiyantrik.ai</strong>
+          </div>
         </div>
       </div>
-         <Whyus />
+      <Whyus />
       <ExpertiseSolutions/>
       <PresentationSection/>
       <Experts/>
-
-      
       <Footers />
     </>
   );

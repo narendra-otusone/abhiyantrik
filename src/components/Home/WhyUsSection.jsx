@@ -11,16 +11,16 @@ const WhyUsSection = () => {
         <p className="subheading">Know What Sets Us Apart</p>
         <h3 className="stronger">Stronger Together:</h3>
         <h4 className="community">A Community of Entrepreneurs Helping Entrepreneurs</h4>
-        <p className="description">
+        <p className="description" style={{color:"white"}}>
           At VidhyaDrishti, we know that running your own business is both exciting and challenging.
           That’s why we’ve built a community where you can grow by learning from others, sharing your experiences,
           and finding support from people who truly understand what it means to be self-employed.
         </p>
-        <p className="description">
+        <p className="description"style={{color:"white"}}>
           Our mission is to give you the tools, knowledge, and connections to help your business succeed. 
           Together, we’ll celebrate your milestones and overcome obstacles — we’re here to help you win.
         </p>
-        <button className="cta-button">Join the Vidhya Drishti</button>
+        <button className="cta-button" style={{backgroundColor:"#FFA500"}}>Join the Vidhya Drishti</button>
       </div>
 
       <div className="whyus-images">

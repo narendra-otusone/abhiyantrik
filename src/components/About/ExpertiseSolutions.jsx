@@ -25,12 +25,17 @@ const services = [
 export default function ExpertiseSolutions() {
   return (
     <section className="expertise-section">
-      <div className="section-label">Work Process</div>
+      <div className="section-label">
+        <span className="label-square"></span>
+        Work Process
+      </div>
       <h2 className="section-title">Expertise and Solutions</h2>
       <div className="card-container">
         {services.map((service, index) => (
           <div className="service-card" key={index}>
-            <div className="icon">{service.icon}</div>
+            <div className="icon-container">
+              <div className="icon">{service.icon}</div>
+            </div>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
             <a href={service.link}>Read More</a>

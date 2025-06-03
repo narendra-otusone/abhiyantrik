@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Work.css";
 import Plant from "../../Assets/HomePage/plant.png";
 
-// You can move this to a separate file if needed
 const ServiceCards = () => {
   const services = [
     {
@@ -26,8 +25,10 @@ const ServiceCards = () => {
     <div className="card-container">
       {services.map((service, index) => (
         <div className="service-card" key={index}>
-          <div className="icon-circle">{service.icon}</div>
-          <h3 className="card-title">{service.title}</h3>
+          <div className="card-content">
+            <h3 className="card-title">{service.title}</h3>
+            <div className="icon-circle">{service.icon}</div>
+          </div>
           <a className="read-more" href={service.link}>
             Read More
           </a>
@@ -64,9 +65,13 @@ const Work = () => {
 
   return (
     <div className="services-container">
-      <h2 className="section-heading">We’re Offering</h2>
+      <div className="services-heading-container">
+        <p className="about-tagline">
+          <span className="red-pointer"></span>Our Services
+        </p>
+        <h2 className="section-heading">We're Offering</h2>
+      </div>
 
-      {/* Insert the 3 Cards Below the Heading */}
       <ServiceCards />
 
       <div className="services-content">
@@ -89,11 +94,7 @@ const Work = () => {
           <p className="service-description">{service.description}</p>
 
           <div className="image-benefits">
-            <img
-              src={Plant}
-              alt="Service Visual"
-              className="service-image"
-            />
+            <img src={Plant} alt="Service Visual" className="service-image" />
             <div className="benefits">
               <h4>Our benefits</h4>
               <p className="highlight">Incubate standards compliant channels benefits.</p>

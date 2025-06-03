@@ -28,7 +28,7 @@ const Whyus = () => {
         </div>
 
         <div className="right-column">
-          <p className="welcome">Welcome to <strong>Abhiyantrik.ai</strong>.</p>
+          <p className="welcome"><span className="welcome-box"></span>Welcome to <strong>Abhiyantrik.ai</strong>.</p>
           <h2>Who We Are</h2>
           <p className="description">
             Your Strategic Partner in Aligning Organizational Goals with Powerful IT Solutions. We Empower Tomorrow with Intelligent Solutions. Explore the Boundless Horizons of AI Excellence with us at <strong>Abhiyantrik.ai</strong>.
@@ -37,13 +37,13 @@ const Whyus = () => {
           <div className="cards-container">
             <div className="cards">
               <div className="info-card">
-                <h3>✅ Our Vision</h3>
+                <h3><span className="blue-tick">✓</span> Our Vision</h3>
                 <p>
                   To be among the most respected and trusted professional firms, delivering high-quality financial and business solutions tailored to our clients' needs.
                 </p>
               </div>
               <div className="info-card">
-                <h3>✅ Our Mission</h3>
+                <h3><span className="blue-tick">✓</span> Our Mission</h3>
                 <p>
                   We aim to empower businesses with financial expertise and strategic guidance. Our mission is to provide top-tier professional services, ensuring compliance, efficiency, and sustainable growth for our clients.
                 </p>

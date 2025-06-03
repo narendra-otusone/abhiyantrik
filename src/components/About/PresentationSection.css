@@ -1,8 +1,9 @@
+/* PresentationSection.css */
 .presentation-container {
   font-family: 'Segoe UI', sans-serif;
   color: #333;
-  padding: 60px 20px;
-  background-color: #f8f9fa;
+  padding: 60px 20px 0; /* Removed bottom padding */
+  background-color: #f0f0f0; /* Changed to grey */
   text-align: center;
 }
 
@@ -11,11 +12,11 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 0; /* Removed margin bottom */
 }
 
 .stat-card {
-  background: #fff;
+  background:#f0f0f0;
   padding: 20px;
   border-radius: 8px;
   width: 180px;
@@ -31,7 +32,14 @@
 .stat-card h3 {
   font-size: 24px;
   margin: 0;
-  color: #000;
+  color: #00a859; /* Changed to green */
+}
+
+.stat-card p.stat-title {
+  font-size: 14px;
+  margin: 5px 0 0;
+  color: #333;
+  font-weight: 600; /* Made slightly bold */
 }
 
 .stat-card p {
@@ -41,23 +49,35 @@
 }
 
 .video-banner {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/featured/?technology,workspace');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../Assets/HomePage/video.png');
   background-size: cover;
   background-position: center;
   padding: 80px 20px;
-  border-radius: 12px;
   color: #fff;
   position: relative;
+  margin-top: 60px; /* Added to compensate for removed padding */
 }
 
 .video-label {
   font-size: 14px;
   color: #facc15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.video-banner h2 {
+.orange-square {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #f97316;
+  margin-right: 8px;
+}
+
+.video-heading {
   font-size: 32px;
   margin: 10px 0;
+  font-weight: 700; /* Made bold */
 }
 
 .video-banner p {
@@ -74,4 +94,15 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .stats-section {
+    gap: 20px;
+  }
+  
+  .stat-card {
+    width: 150px;
+    padding: 15px;
+  }
 }
