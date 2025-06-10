@@ -37,6 +37,7 @@ import Menu from './components/OurService/Menu.jsx';
 import Testimonial from './components/OurService/Testimonial.jsx';
 import Work from './components/OurService/Work.jsx';
 import Contactform from "./components/Form/Contactform.jsx";
+import AdminContacts from "./components/Form/AdminContacts.jsx";
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
           <Route path="/test" element={<Testimonial/>}/>
           <Route path="/work" element={<Work/>}/>
           <Route path="/form" element={<Contactform/>}/>
+          <Route path="/admin" element={<AdminContacts/>}/>
 
           {/* Private route */}
           <Route
