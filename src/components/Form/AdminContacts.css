@@ -64,6 +64,7 @@
   overflow-x: auto;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
 }
 
 .submissions-table {
@@ -94,10 +95,6 @@
   background-color: #2980b9;
 }
 
-.submissions-table th .sort-arrow {
-  margin-left: 5px;
-}
-
 .submissions-table tbody tr {
   border-bottom: 1px solid #ecf0f1;
   transition: background-color 0.2s;
@@ -109,6 +106,7 @@
 
 .submissions-table tbody tr:hover {
   background-color: #f8f9fa;
+  cursor: pointer;
 }
 
 .submissions-table td {
@@ -116,11 +114,18 @@
   color: #34495e;
 }
 
-.comment-cell {
-  max-width: 300px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.view-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-btn:hover {
+  background-color: #2980b9;
 }
 
 .no-results {
@@ -147,6 +152,138 @@
   text-align: center;
   padding: 2rem;
   font-size: 1.1rem;
+}
+
+.refresh-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  color: #7f8c8d;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.contact-details-modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #7f8c8d;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row.full-width {
+  flex-direction: column;
+}
+
+.detail-label {
+  font-weight: bold;
+  color: #2c3e50;
+  min-width: 120px;
+}
+
+.detail-value {
+  color: #34495e;
+  flex: 1;
+}
+
+.detail-value.comment {
+  margin-top: 0.5rem;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.reply-btn, .close-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.reply-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.reply-btn:hover {
+  background-color: #27ae60;
+}
+
+.close-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.close-btn:hover {
+  background-color: #c0392b;
 }
 
 @keyframes spin {
@@ -190,8 +327,24 @@
     margin-right: 1rem;
   }
   
-  .comment-cell {
-    max-width: 100%;
-    white-space: normal;
+  .contact-details-modal {
+    width: 95%;
+    padding: 1.5rem 1rem;
+  }
+  
+  .detail-row {
+    flex-direction: column;
+  }
+  
+  .detail-label {
+    margin-bottom: 0.25rem;
+  }
+  
+  .modal-actions {
+    flex-direction: column;
+  }
+  
+  .reply-btn, .close-btn {
+    width: 100%;
   }
 }
