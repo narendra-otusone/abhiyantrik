@@ -8,21 +8,19 @@
   min-height: calc(100vh - 40px);
   box-sizing: border-box;
   align-items: flex-start;
-  /* justify-content: center; */
 }
 
- .contact-left {
+.contact-left {
   flex: 1;
   min-width: 300px;
   max-width: 500px;
   padding: 2px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align content to top */
+  justify-content: flex-start;
   height: auto;
   margin: 0 auto;
 }
-
 
 .contact-left h2 {
   font-weight: 600;
@@ -149,6 +147,49 @@
   background-color: #01456b;
 }
 
+/* Success notification styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+  animation: fadeInOut 3s ease-in-out forwards;
+}
+
+.notification.success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.notification.error {
+  background-color: #f44336;
+  color: white;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .contact-container {
@@ -195,41 +236,116 @@
 }
 
 
-/* Add this to your existing CSS */
-.success-message {
+/* Add these styles to your Contactform.css */
+
+.notification {
   position: fixed;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 20px;
+  padding: 15px 25px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  animation: slideIn 0.5s ease-out forwards;
   background-color: #4CAF50;
   color: white;
-  padding: 15px 30px;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification svg {
+  flex-shrink: 0;
+}
+
+.notification p {
+  margin: 0;
+  font-size: 16px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+
+/* Add these notification styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 25px;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 1000;
-  animation: fadeInOut 5s ease-in-out;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  animation: slideIn 0.3s ease-out forwards;
+  background-color: #4CAF50;
+  color: white;
+  max-width: 400px;
 }
 
-@keyframes fadeInOut {
-  0% {
+.notification.success {
+  background-color: #4CAF50;
+}
+
+.notification.error {
+  background-color: #f44336;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification svg {
+  flex-shrink: 0;
+}
+
+.notification p {
+  margin: 0;
+  font-size: 16px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
     opacity: 0;
-    top: 0;
   }
-  10% {
+  to {
+    transform: translateX(0);
     opacity: 1;
-    top: 20px;
-  }
-  90% {
-    opacity: 1;
-    top: 20px;
-  }
-  100% {
-    opacity: 0;
-    top: 0;
   }
 }
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
-
-
+/* Add this if you want the notification to fade out before disappearing */
+.notification.fade-out {
+  animation: fadeOut 0.5s ease-out forwards;
+}

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Contactform.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contactform = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +12,7 @@ const Contactform = () => {
     service: '',
     comment: '',
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,6 +21,8 @@ const Contactform = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
     try {
       const response = await fetch('http://localhost:5000/api/contacts', {
         method: 'POST',
@@ -29,8 +33,8 @@ const Contactform = () => {
       });
 
       if (response.ok) {
-        setIsSubmitted(true);
-        // Reset form
+        toast.success("Form submitted successfully! We'll get back to you soon.");
+
         setFormData({
           name: '',
           email: '',
@@ -39,26 +43,20 @@ const Contactform = () => {
           service: '',
           comment: '',
         });
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-          setIsSubmitted(false);
-        }, 5000);
       } else {
         throw new Error('Failed to submit form');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      alert('There was an error submitting your form. Please try again.');
+      toast.success("Form submitted successfully! We'll get back to you soon.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
     <div className="contact-container">
-      {isSubmitted && (
-        <div className="success-message">
-          Your message has been submitted! We will contact you soon.
-        </div>
-      )}
+      <ToastContainer position="top-right" autoClose={5000} />
       
       <div className="contact-left">
         <div>
@@ -77,7 +75,7 @@ const Contactform = () => {
 
       <form className="contact-form" onSubmit={handleSubmit}>
         <h2>CONTACT US</h2>
-        
+
         <div className="form-group">
           <label>Your full name</label>
           <input
@@ -89,7 +87,7 @@ const Contactform = () => {
             required
           />
         </div>
-        
+
         <div className="form-group">
           <label>Email Address</label>
           <input
@@ -101,7 +99,7 @@ const Contactform = () => {
             required
           />
         </div>
-        
+
         <div className="form-group">
           <label>Contact Number</label>
           <input
@@ -113,7 +111,7 @@ const Contactform = () => {
             required
           />
         </div>
-        
+
         <div className="form-group">
           <label>Company Name</label>
           <input
@@ -124,7 +122,7 @@ const Contactform = () => {
             onChange={handleChange}
           />
         </div>
-        
+
         <div className="form-group">
           <label>Service</label>
           <div className="service-options">
@@ -157,7 +155,7 @@ const Contactform = () => {
             </label>
           </div>
         </div>
-        
+
         <div className="form-group">
           <label>Add Comment</label>
           <textarea
@@ -167,9 +165,11 @@ const Contactform = () => {
             onChange={handleChange}
           ></textarea>
         </div>
-        
+
         <div className="submit-button-container">
-          <button type="submit">Submit</button>
+          <button type="submit" disabled={isSubmitting}>
+            {isSubmitting ? 'Submitting...' : 'Submit'}
+          </button>
         </div>
       </form>
     </div>
