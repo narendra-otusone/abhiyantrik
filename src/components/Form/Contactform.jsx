@@ -10,6 +10,7 @@ const Contactform = () => {
     service: '',
     comment: '',
   });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,7 +29,7 @@ const Contactform = () => {
       });
 
       if (response.ok) {
-        alert('Your message has been submitted! We will contact you soon.');
+        setIsSubmitted(true);
         // Reset form
         setFormData({
           name: '',
@@ -38,6 +39,10 @@ const Contactform = () => {
           service: '',
           comment: '',
         });
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 5000);
       } else {
         throw new Error('Failed to submit form');
       }
@@ -49,6 +54,12 @@ const Contactform = () => {
 
   return (
     <div className="contact-container">
+      {isSubmitted && (
+        <div className="success-message">
+          Your message has been submitted! We will contact you soon.
+        </div>
+      )}
+      
       <div className="contact-left">
         <div>
           <h2>WE ARE HERE TO ASSIST YOU!</h2>
