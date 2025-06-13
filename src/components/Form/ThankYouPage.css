@@ -1,0 +1,129 @@
+.thank-you-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.thank-you-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.check-circle {
+  margin-bottom: 25px;
+}
+
+.success-icon {
+  font-size: 80px;
+  color: #4CAF50;
+}
+
+.thank-you-card h1 {
+  color: #002b45;
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+}
+
+.thank-you-message {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contact-icon {
+  color: #4A90E2;
+}
+
+.home-button {
+  background-color: #002b45;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-button:hover {
+  background-color: #01456b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .thank-you-card {
+    padding: 30px 20px;
+  }
+  
+  .thank-you-card h1 {
+    font-size: 1.8rem;
+  }
+  
+  .thank-you-message {
+    font-size: 1rem;
+  }
+  
+  .contact-item {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .thank-you-card {
+    padding: 25px 15px;
+  }
+  
+  .success-icon {
+    font-size: 60px;
+  }
+  
+  .thank-you-card h1 {
+    font-size: 1.5rem;
+  }
+  
+  .home-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

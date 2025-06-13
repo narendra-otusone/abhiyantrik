@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Contactform.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contactform = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -33,22 +35,14 @@ const Contactform = () => {
       });
 
       if (response.ok) {
-        toast.success("Form submitted successfully! We'll get back to you soon.");
-
-        setFormData({
-          name: '',
-          email: '',
-          contact: '',
-          company: '',
-          service: '',
-          comment: '',
-        });
+        // Navigate to thank you page with user's name
+        navigate('/thank-you', { state: { name: formData.name } });
       } else {
-        throw new Error('Failed to submit form');
+        navigate('/thank-you', { state: { name: formData.name } });
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      toast.success("Form submitted successfully! We'll get back to you soon.");
+      toast.error("Failed to submit form. Please try again.");
     } finally {
       setIsSubmitting(false);
     }

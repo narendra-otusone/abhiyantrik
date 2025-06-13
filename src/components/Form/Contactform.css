@@ -349,3 +349,84 @@ button:disabled {
 .notification.fade-out {
   animation: fadeOut 0.5s ease-out forwards;
 }
+/* Add these styles at the end of your existing CSS */
+
+.thank-you-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.thank-you-container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.thank-you-container h1 {
+  color: #4A90E2;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.thank-you-container p {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.home-button {
+  background-color: #002b45;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #01456b;
+}
+
+@media (max-width: 768px) {
+  .thank-you-container {
+    padding: 30px 20px;
+  }
+  
+  .thank-you-container h1 {
+    font-size: 36px;
+  }
+  
+  .thank-you-container p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .thank-you-container {
+    padding: 20px 15px;
+  }
+  
+  .thank-you-container h1 {
+    font-size: 32px;
+  }
+  
+  .thank-you-container p {
+    font-size: 16px;
+  }
+  
+  .home-button {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+}
