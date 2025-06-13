@@ -38,6 +38,7 @@ import Testimonial from './components/OurService/Testimonial.jsx';
 import Work from './components/OurService/Work.jsx';
 import Contactform from "./components/Form/Contactform.jsx";
 import AdminContacts from "./components/Form/AdminContacts.jsx";
+import AdminLogin from "./components/Form/AdminLogin.jsx";
 
 function App() {
   return (
@@ -74,6 +75,7 @@ function App() {
           <Route path="/work" element={<Work/>}/>
           <Route path="/form" element={<Contactform/>}/>
           <Route path="/admin" element={<AdminContacts/>}/>
+          <Route path="/adminlogin" element={<AdminLogin/>}/>
 
           {/* Private route */}
           <Route
