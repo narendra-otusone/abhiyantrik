@@ -14,7 +14,7 @@ const AdminContacts = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/contacts', {
+        const response = await fetch('https://abhiyantrik.onrender.com/api/contacts', {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('adminToken')}`
           }

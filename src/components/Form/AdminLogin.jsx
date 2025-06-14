@@ -18,7 +18,7 @@ const AdminLogin = () => {
     const password = formData.get('password');
 
     try {
-      const response = await fetch('http://localhost:5000/api/admin/login', {
+      const response = await fetch('https://abhiyantrik.onrender.com/api/admin/login ', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -32,18 +32,17 @@ const AdminLogin = () => {
         throw new Error(data.message || 'Login failed');
       }
 
-      // Store the admin token in localStorage
       localStorage.setItem('adminToken', data.token);
       
-      // Reset the form fields
+     
       if (formRef.current) {
         formRef.current.reset();
       }
       
-      // Reset loading state
+     
       setLoading(false);
       
-      // Redirect to the admin contacts page
+      
       navigate('/admin');
     } catch (err) {
       setError(err.message);
