@@ -3,6 +3,8 @@ import "./HomeFooter.css";
 import { useNavigate } from 'react-router-dom';
 const HomeFooter = () => {
     const navigate= useNavigate();
+  const currentYear = new Date().getFullYear();
+
     return (
         <>
             <div className="row w-100 mx-auto homeFooter"
@@ -10,7 +12,7 @@ const HomeFooter = () => {
                 <div className="col-md-4 gap-1 px-5">
                     <p className="footer_text text-center" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <i className="fa-regular fa-copyright" style={{ marginRight: '5px', backgroundColor: 'none', fontSize: '12px' }} />
-                        abhiyantrik.ai-2024 All rights reserved
+                        {currentYear} Abhiyantrik.ai. All rights reserved.
                     </p>
 
                 </div>
